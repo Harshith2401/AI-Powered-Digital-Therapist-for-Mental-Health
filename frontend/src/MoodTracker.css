@@ -1,0 +1,114 @@
+/* ===== GENERAL STYLES ===== */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1E293B;
+}
+
+/* ===== POPUP QUESTION BOX ===== */
+.popup {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 400px;
+  width: 90%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2D3748;
+}
+
+/* ===== OPTIONS (BUTTONS) ===== */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button {
+  background: #4A90E2;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #357ABD;
+}
+
+/* ===== MOOD RESULT BOX ===== */
+.result {
+  background: #F7FAFC;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 450px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.result h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2D3748;
+  margin-bottom: 20px;
+}
+
+/* Try Again Button */
+.result button {
+  background: #FF6B6B;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.result button:hover {
+  background: #E63946;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .popup, .result {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
