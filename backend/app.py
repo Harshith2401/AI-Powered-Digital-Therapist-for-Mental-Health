@@ -4,7 +4,7 @@ from load_model import get_bot_response
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend-backend communication
-#ok ok hello
+#ok ok hello hel
 @app.route("/chat", methods=["POST"])
 def chat():
     data = request.get_json()
